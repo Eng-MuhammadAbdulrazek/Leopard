@@ -14,6 +14,8 @@ use Modules\Users\Http\Controllers\UsersController;
 |
 */
 
-Route::group([], function () {
-    Route::resource('users', UsersController::class)->names('users');
+Route::prefix('users')->group(function(){
+    Route::get('/',function(){
+        return 'users is on !';
+    });
 });
