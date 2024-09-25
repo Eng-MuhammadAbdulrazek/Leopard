@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Leopard'),
 
     /*
     |--------------------------------------------------------------------------
@@ -77,6 +77,10 @@ return [
     | set to any locale for which you plan to have translation strings.
     |
     */
+    'supported_locales' => [
+        'en',
+        'ar',
+    ],
 
     'locale' => env('APP_LOCALE', 'en'),
 
